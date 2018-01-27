@@ -24,6 +24,15 @@
     </div>
 
     <script type="text/javascript">
+      $(".tab").on("click", function(event) {
+        $(".tab").removeClass("active");
+        $(this).addClass("active");
+        
+        $(".tab-content").removeClass("show");
+        var tabContentId = $(this).attr("href");
+        $(tabContentId).addClass("show");
+        
+      })
 
     </script>
   </body>
